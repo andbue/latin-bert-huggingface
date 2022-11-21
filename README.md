@@ -62,7 +62,7 @@ sents = ["arma virum -que cano", "arma gravi numero violenta -que bella parabam"
 sents = [s.split() for s in sents]  # enclitics and word splitting...
 
 # tokenize and run model
-inputs = tokenizer(sents, return_tensors="pt", is_split_into_words=True, padding=True)
+inputs = tokenizer(sents, return_tensors="pt", is_split_into_words=True, padding=True, truncation=True)
 outputs = model(**inputs)
 
 # average over subtokens and print results

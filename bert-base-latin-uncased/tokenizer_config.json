@@ -1,3 +1,4 @@
 {
-  "tokenizer_class": "PreTrainedTokenizerFast"
+  "tokenizer_class": "PreTrainedTokenizerFast",
+  "model_max_length": 512,
 }
